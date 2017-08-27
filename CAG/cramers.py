@@ -40,7 +40,7 @@ class Cramers:
         for n in range(1, self.cramer_number+1):
             self.app.addEmptyLabel("eq{}".format(n))
 
-        self.app.addEmptyLabel("solution", row=4)
+        self.app.addEmptyLabel("solution", row=self.cramer_number+1)
         self.app.stopLabelFrame()
 
         self.app.enableEnter(self.solve)
